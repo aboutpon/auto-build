@@ -23,3 +23,4 @@ WORKDIR /code
 RUN pip install --upgrade setuptools
 RUN pip install python-memcached==1.58 
 RUN pip install -r requirements.txt
+EXPOSE ['8000']
