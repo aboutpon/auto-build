@@ -17,3 +17,4 @@ ADD requirements.txt /code
 WORKDIR /code
 RUN pip install -r requirements.txt
 RUN pip install django-cors-headers
+EXPOSE 8000
