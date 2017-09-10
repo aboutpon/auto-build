@@ -18,6 +18,8 @@ RUN apt-get install -y libxml2-dev
 RUN apt-get install -y libxmlsec1-dev
 RUN apt-get install -y libmemcached-dev 
 RUN mkdir /code
+RUN python3.6 -m venv env
+RUN /bin/bash -c "source /code/env/bin/activate"
 ADD requirements.txt /code
 WORKDIR /code
 RUN pip install --upgrade setuptools
