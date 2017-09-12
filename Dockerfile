@@ -2,7 +2,7 @@ FROM python:3.6.2
 
 RUN apt-get update
 
-
+RUN apt-get install -y git
 RUN apt-get install -y libssl-dev 
 RUN apt-get install -y libffi-dev
 RUN apt-get install -y libsasl2-dev 
